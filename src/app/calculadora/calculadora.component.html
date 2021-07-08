@@ -1,0 +1,19 @@
+
+
+<form>
+    <label><h2>numero1:</h2></label>
+    <input matInput type="number" id="numero1" name="numero1" [(ngModel)]="numero1" value="numero1" required>
+    <br>
+    <label><h2>numero2:</h2></label>
+    <input matInput type="number" id="numero2" name="numero2" [(ngModel)]="numero2" value="numero2" required>
+    
+
+    <br>
+    <button class="btn-block" (click)="sumar()">sumar</button>
+    <button class="btn-block" (click)="restar()">restar</button>
+    <button class="btn-block" (click)="multiplicar()">multiplicar</button>
+    <button class="btn-block" (click)="dividir()">dividir</button>
+</form>
+
+<label><h2>resultado:</h2></label>
+    <input id="resultado" name="resultado" [(ngModel)]="resultado" value="resultado" disabled>
